@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crunch Haven Menu - Explore our delicious Nigerian snacks, rice dishes, soups, and specials.">
+    <title>Our Menu - Crunch Haven</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Crunch Haven</a>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Menu</h1>
+            <p>Explore our delicious selection of authentic Nigerian cuisine</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section">
+        <div class="container">
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterMenu('all')">All</button>
+                <button class="filter-btn" onclick="filterMenu('snacks')">Snacks</button>
+                <button class="filter-btn" onclick="filterMenu('rice')">Rice</button>
+                <button class="filter-btn" onclick="filterMenu('soups')">Soups</button>
+                <button class="filter-btn" onclick="filterMenu('stew')">Stew</button>
+                <button class="filter-btn" onclick="filterMenu('specials')">Specials</button>
+                 <button class="filter-btn" onclick="filterMenu('Something Else')"><a href="contact.html">Make a Request</a></button>
+ </div>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menuGrid">
+                <div class="menu-card" data-category="snacks specials">
+                    <div class="menu-image">
+                        <img src="images/crunchy.jpeg" alt="Chin Chin">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Chin Chin</h3>
+                        <p>Crunchy, golden-brown fried dough cubes, perfect for snacking</p>
+                        <a href="https://wa.me/2349033267379?text=I'd like to order Chin Chin" target="_blank" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="rice specials">
+                    <div class="menu-image">
+                        <img src="images/jellof-rice.jpeg" alt="Jollof Rice with Chicken">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Jollof Rice with Chicken</h3>
+                        <p>Nigeria's favorite dish - flavorful rice with tender grilled chicken</p>
+                        <a href="https://wa.me/2349033267379?text=I'd like to order Jollof Rice with Chicken" target="_blank" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="rice">
+                    <div class="menu-image">
+                        <img src="images/fried-rice.jpeg" alt="Nigerian Fried Rice">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Nigerian Fried Rice</h3>
+                        <p>Colorful mixed rice with vegetables, shrimp, and chicken</p>
+                        <a href="https://wa.me/2349033267379?text=I'd like to order Nigerian Fried Rice" target="_blank" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="soups">
+                    <div class="menu-image">
+                        <img src="images/Egusi.-soup.png" alt="Egusi Soup">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Egusi Soup</h3>
+                        <p>Rich, traditional melon seed soup with assorted meat</p>
+                        <a href="https://wa.me/2349033267379?text=I'd like to order Egusi Soup" target="_blank" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+                
+                                <div class="menu-card" data-category="soups">
+                    <div class="menu-image">
+                        <img src="images/oha-soup.jpeg" alt="Oha Soup">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Oha Soup</h3>
+                        <p>Well-seasoned Oha soup bursting with the fresh, earthy flavor of oha leaves and traditional ingredients.</p>
+                        <a href="https://wa.me/2349033267379?text=I'd like to order Oha Soup" target="_blank" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+                
+                                                <div class="menu-card" data-category="soups">
+                    <div class="menu-image">
+                        <img src="images/Bitter-leaf.jpeg" alt="Bitter-leaf Soup">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Bitter-leaf Soup (Ofe onugbu)</h3>
+                        <p>Well-seasoned Bitter Leaf Soup bursting with the unique, savory taste of properly washed bitter leaves and traditional spices.</p>
+                        <a href="https://wa.me/2349033267379?text=I'd like to order Bitter-leaf Soup" target="_blank" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+               
+                
+                
+                <div class="menu-card" data-category="soups">
+                    <div class="menu-image">
+                        <img src="images/Okro-soup.jpeg" alt="Okro Soup">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Okro Soup</h3>
+                        <p>A rich, savory pot of Okro soup made with fresh okra and assorted meat.</p>
+                        <a href="https://wa.me/2349033267379?text=I'd like to order Okro Soup" target="_blank" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+                
+                
+                                
+                <div class="menu-card" data-category="soups">
+                    <div class="menu-image">
+                        <img src="images/vegetable-soup.png" alt="Vegetable Soup">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Vegetable Soup</h3>
+                        <p>Delicious, nutrient-packed Vegetable soup made with fresh vegetables and assorted meats.</p>
+                        <a href="https://wa.me/2349033267379?text=I'd like to order Vegetable Soup" target="_blank" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+                
+                                <div class="menu-card" data-category="stew">
+                    <div class="menu-image">
+                        <img src="images/stew.jpeg" alt="Nigerian Fried Rice">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Nigerian Tomatoes Stew</h3>
+                        <p>Flavorful, aromatic Tomato stew cooked with fresh tomatoes, peppers, and onions</p>
+                        <a href="https://wa.me/2349033267379?text=I'd like to order Tomatoes Stew" target="_blank" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+                
+                                                <div class="menu-card" data-category="stew">
+                                    <div class="menu-image">
+                                        <img src="images/banga-stew.jpeg" alt="Nigerian Fried Rice">
+                                    </div>
+                                    <div class="menu-content">
+                                        <h3>Banga Stew(Ofe Akwu)</h3>
+                                        <p>Rich, traditional Igbo-style Banga stew made from fresh palm fruit extract and native Igbo seasonings.</p>
+                                        <a href="https://wa.me/2349033267379?text=I'd like to order Banga Stew" target="_blank" class="btn btn-small">Order Now</a>
+                                    </div>
+                                </div>
+                              
+
+
+                <div class="menu-card" data-category="snacks">
+                    <div class="menu-image">
+                        <img src="images/coming-soon.jpeg" alt="Puff Puff">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Puff Puff</h3>
+                        <p>Sweet, fluffy fried dough balls - a beloved Nigerian treat</p>
+                        <a href="https://wa.me/2349033267379?text=I'd like to order Puff Puff" target="_blank" class="btn btn-small">Order Now</a>
+                    </div>
+                </div>
+                
+                                                                <div class="menu-card" data-category="stew">
+                                                    <div class="menu-image">
+                                                        <img src="images/vegetable-stew.jpeg" alt="Vegetable Stew">
+                                                    </div>
+                                                    <div class="menu-content">
+                                                        <h3>Vegetable Stew</h3>
+                                                        <p>Delicious, vibrant vegetable stew prepared with fresh tomatoes, peppers, onions, and leafy greens.</p>
+                                                        <a href="https://wa.me/2349033267379?text=I'd like to order Vegetable Stew" target="_blank" class="btn btn-small">Order Now</a>
+                                                    </div>
+                                                </div>
+                
+            <!-- No items message -->
+            <div class="no-items" id="noItems" style="display: none;">
+                <p>No items found in this category</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Crunch Haven</h3>
+                    <p>Happiness, one bite at a time. Authentic Nigerian cuisine made with love and tradition.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><strong>Location:</strong> Umuchima, FUTO</p>
+                    <p><strong>Phone:</strong> +234 903 326 7379</p>
+                    <a href="https://wa.me/2349033267379" target="_blank" class="whatsapp-link">
+                        <svg viewBox="0 0 24 24" class="whatsapp-icon" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                        Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Crunch Haven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/2349033267379" target="_blank" class="whatsapp-float">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
